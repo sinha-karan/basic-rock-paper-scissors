@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>09 Exercises</title>
+</head>
+<body>
+  <!-- <button>9a</button> -->
+  <!-- <button onclick="
+    headtails('heads')
+  ">
+    heads
+  </button>
+  <button onclick="
+  headtails('tails')
+  ">
+    tails
+  </button>
+  <p class="js-heads-tails"></p> -->
+
+  <!-- <input type="text" placeholder="Name" class="js-name-input" onkeydown="
+    if (event.key === 'Enter') {
+      printName();
+    }
+  ">
+  <button onclick="
+    printName();
+  "
+  >Submit</button>
+  <p class="js-yourname"></p> -->
+
+  <input type="text" class = "js-input" onkeyup="
+    let inpouElement = document.querySelector('.js-input').value
+    document.querySelector('.js-para').innerHTML = `${inpouElement}`;
+  ">
+  <p class="js-para"></p>
+  <script>
+    /*
+    document.querySelector('button').innerHTML = '9b done!'
+
+    function headtails(params) {
+      document.querySelector('.js-heads-tails').innerHTML = `You Chose: ${params}`;
+    }
+    */
+   /*
+   function printName() {
+    let name = document.querySelector('.js-name-input').value;
+
+    document.querySelector('.js-yourname').innerHTML = `Your name is: ${name}`;
+   }
+  */
+    
+  </script>
+</body>
+</html>

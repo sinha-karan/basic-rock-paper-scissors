@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>08 Heads & Tails</title>
+</head>
+<body>
+
+  <button onclick="
+  playGame('heads');
+  ">
+    Heads
+  </button>
+  <button onclick="
+  playGame('tails');
+  ">
+    Tails
+  </button>
+  <button onclick="
+  sore.wins = 0;
+  sore.losses = 0;
+  localStorage.removeItem('sore');
+  ">
+    Reset Score
+  </button>
+
+  <script>
+    let sore =JSON.parse(localStorage.getItem('sore'))|| {
+        wins: 0,
+        losses: 0,
+      };
+
+  // const score = {
+  //   wins: 0,
+  //   losses: 0
+  // };
+
+  
+  function playGame(guess) {
+    let resut;
+    let num = Math.random(); 
+    
+      if (num < 0.5) {
+        result = 'heads';
+      }else{
+        result = 'tails';
+      }
+  
+      if (guess === result) {
+       sore.wins += 1;
+       console.log('You win');
+      }else{
+        sore.losses += 1;
+        console.log('You lose');
+      }
+      console.log(sore)
+      localStorage.setItem('sore' , JSON.stringify(sore));
+    }
+    
+  </script>
+</body>
+</html>

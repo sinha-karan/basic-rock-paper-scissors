@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 06</title>
+</head>
+<body>
+  <script>
+    // const hour = '22:00';
+    // const name = 'Karan';
+    // if(hour >= '00:00' && hour <= '12:00'){
+    //   console.log(`Good Morning ${name}`);
+    // }else if (hour >= '12:01' && hour <= '17:00') {
+    //   console.log(`Good Afternoon ${name}`);
+    // }else if (hour >= '17:01' && hour <= '23:59') {
+    //   console.log(`Good Night ${name}`);
+    // }
+
+
+    // const age = 23;
+    // const isHoliday = true;
+
+    // if (isHoliday && (age <= 6 || age >= 65)) {
+    //   console.log('Discount');
+    // }else{
+    //   console.log('No Discount');
+    // }
+
+    let num = Math.random();
+    console.log(num);
+    let result;
+    const guess = 'heads';
+
+    // if (num < 0.5) {
+    //   result = 'heads';
+    // }else{
+    //   result = 'tails';
+    // }
+
+    // if (guess === result) {
+    //   console.log('You Win!');
+    // }else{
+    //   console.log('You Lose!');
+    // }
+
+    result = num < 0.5 ? 'heads' : 'tails';
+    
+    let game = guess === result ? 'You Win!' : 'You Lose!';
+    console.log(`In this game ${game}`)
+
+  </script>
+</body>
+</html>

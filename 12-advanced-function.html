@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Function</title>
+</head>
+<body>
+  <!-- <button class="js-button" onclick="">Click</button> -->
+
+  <script>
+
+/*
+    document.querySelector('.js-button').addEventListener('click', () =>{
+      console.log('click');
+    });
+
+    const eventListener = () =>{
+      console.log('click2');
+    };
+
+    document.querySelector('.js-button').addEventListener('click', eventListener ); //multiple event can be created with addEventListener help
+
+    document.querySelector('.js-button').removeEventListener('click', eventListener); //used to remove click function
+*/
+    
+
+    /*
+    function greeting(){
+      console.log('hello');
+    }
+    greeting();
+
+    const function1 = function(){ //Anonymous function
+      console.log('hello2');
+    };
+
+    console.log(function1);
+    console.log(typeof function1)
+    function1();
+
+    const object1 = {
+      num: 2,
+      fun: function greeting(){ //function inside an object
+        console.log('hello3')
+      }
+    };
+    object1.fun();
+
+    function display(param){
+      console.log(param);
+    }
+    display(2); //passing a value into a function
+
+    function run(param){ // Passing a function into another function
+      param();
+    }
+    run(function() { // the function we're passing in is called call-back function
+      console.log('hello4')
+    });
+    */
+
+    /*
+    setTimeout(function(){
+      console.log('timeout');
+
+    }, 3000);
+
+    console.log('next line')
+
+    setInterval(function(){
+      console.log('interval');
+
+    }, 3000);
+
+    console.log('next line 2')
+    */
+
+/*
+    [
+      'make dinner',
+      'wash dishes',
+      'Watch Youtube'
+    ].forEach(function(value,index){
+      if (value === 'wash dishes') {
+        return; //Does the same thing as continue; do in for loop
+      }
+      console.log(index)
+      console.log(value);
+    });
+*/
+
+/*
+    const regularFunction = function (param, param2){
+      console.log('hello2')
+    };
+    regularFunction();
+
+    const arrowFunction = (param, param2) => {
+      console.log('hello');
+    };
+    arrowFunction();
+
+    const oneParam = param => { //No need for round brackets if only one parameter is there
+      console.log(param + 1);
+    };
+    oneParam(2);
+
+    const oneLine = () => 2 + 3; // no need to put return statement and curly bracket in arrow function if one-liner code is there
+
+    console.log(oneLine());
+
+    [
+      'make dinner',
+      'wash dishes',
+      'Watch Youtube'
+    ].forEach((value,index) => { //use of arrow fnction here
+      if (value === 'wash dishes') {
+        return; //Does the same thing as continue; do in for loop
+      }
+      console.log(index)
+      console.log(value);
+    });
+
+    const object2 = {
+      method: () => {
+
+      },
+      method() { //this syntax is known as shorthand Method
+
+      }
+    };
+*/
+
+    console.log([1, -3, 5].filter((value,index) => {
+      // .filter() is like forEach checks with all the element but on based on condition it filter element from array 
+      /*
+      if (value >= 0) {
+        return true;
+      } else{
+        return false
+      }
+      */
+
+      // similar to above code but in short
+      return value >= 0;
+    }));
+
+    console.log([1,2,3].map((value,index) => {
+      return value * 2;
+    }))
+
+
+    console.log([1,2,3].map(value => value * 2 ));
+
+
+  </script>
+</body>
+</html>
